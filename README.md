@@ -1,69 +1,63 @@
-# React + TypeScript + Vite
+# 🛠️ Helpdesk System - Internship Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **responsive Helpdesk Management System** built with **React.js** as part of an internship assignment. It includes basic authentication, ticket creation, and a user-friendly dashboard interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+Hosted on Netlify: [https://helpdesk-seven-pi.vercel.app/]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧪 Test Credentials
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+You can use the following credentials to test the app:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```txt
+Username:deep
+Email: deep@example.com
+Password: 1234
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* sign up using any dummy data — all users are stored in your browser's localStorage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Features
+
+    ✅ Sign Up / Login
+
+    ✅ Dashboard Overview
+
+    ✅ Create New Support Tickets
+
+    ✅ View Submitted Tickets with Rating & Status
+
+    ✅ LocalStorage-based persistence
+
+    ✅ Protected Routes (can’t access pages without login)
+
+    ✅ Responsive Layout with Sidebar and Footer
+
+ 🧱 Tech Stack
+    Frontend	  Routing           Styling
+    React.js	React Router DOM	Tailwind CSS
+
+
+
+
+
+🛠️ Setup Instructions
+
+  1. Clone the Repository
+
+  -  git clone https://github.com/your-username/helpdesk-system.git
+  -  cd helpdesk-system
+
+  2. Install Dependencies
+
+  -  npm install
+
+  3. Run the App
+
+  -  npm run dev
+  Then visit http://localhost:5173

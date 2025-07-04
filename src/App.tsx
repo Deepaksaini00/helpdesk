@@ -7,7 +7,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import NewTicket from "./pages/NewTicket";
 import MyTickets from "./pages/MyTickets";
 import UserProfile from "./pages/UserProfile";
-import { useEffect } from "react";}
+import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
